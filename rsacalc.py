@@ -4,6 +4,7 @@ import sys
 while True:
     method = input("Encrypt, Decrypt or exit?\n")
     method.strip()
+    method.lower()
 
     if method == "encrypt":
         p = int(input('p\n'))
