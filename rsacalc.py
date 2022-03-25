@@ -12,7 +12,6 @@ while True:
     if method == "encrypt":
         n = int(input('n\n'))
         e = int(input('e\n'))
-        d = int(input('d\n'))
         m = int(input('m\n'))
         result = (m**e) % (n)
 
@@ -20,7 +19,6 @@ while True:
 
     elif method == "decrypt":
         n = int(input('n\n'))
-        e = int(input('e\n'))
         d = int(input('d\n'))
         c = int(input('c\n'))
 
