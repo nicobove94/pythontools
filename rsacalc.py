@@ -1,5 +1,8 @@
 import sys
 
+'''
+RSA Calculator
+'''
 
 while True:
     method = input("Encrypt, Decrypt or exit?\n")
@@ -7,23 +10,21 @@ while True:
     method.lower()
 
     if method == "encrypt":
-        p = int(input('p\n'))
-        q = int(input('q\n'))
+        n = int(input('n'\n))
         e = int(input('e\n'))
         d = int(input('d\n'))
         m = int(input('m\n'))
-        result = (m**e) % (p*q)
+        result = (m**e) % (n)
 
         print("c =", result)
 
     elif method == "decrypt":
-        p = int(input('p\n'))
-        q = int(input('q\n'))
+        n = int(input('n\n'))
         e = int(input('e\n'))
         d = int(input('d\n'))
         c = int(input('c\n'))
 
-        result = (c**d) % (p*q)
+        result = (c**d) % (n)
 
         print("m =", result)
 
