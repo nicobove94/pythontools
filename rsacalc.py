@@ -10,7 +10,7 @@ while True:
     method.lower()
 
     if method == "encrypt":
-        n = int(input('n'\n))
+        n = int(input('n\n'))
         e = int(input('e\n'))
         d = int(input('d\n'))
         m = int(input('m\n'))
